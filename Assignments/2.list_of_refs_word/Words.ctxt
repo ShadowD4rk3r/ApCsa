@@ -1,0 +1,11 @@
+#BlueJ class context
+comment0.target=Words
+comment1.params=wordList
+comment1.target=Words(java.lang.String[])
+comment2.params=size
+comment2.target=int\ countWordsWithXChars(int)
+comment3.params=size
+comment3.target=int\ removeWordsWithXChars(int)
+comment4.params=numVowels
+comment4.target=int\ countWordsWithXVowels(int)
+numComments=5

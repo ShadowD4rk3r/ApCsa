@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.target=NumberAnalyzer
+comment1.params=nums
+comment1.target=NumberAnalyzer(int[])
+comment2.params=
+comment2.target=int\ countOdds()
+comment3.params=
+comment3.target=int\ countEvens()
+comment4.params=
+comment4.target=int\ countPerfects()
+comment5.params=
+comment5.target=java.lang.String\ toString()
+numComments=6

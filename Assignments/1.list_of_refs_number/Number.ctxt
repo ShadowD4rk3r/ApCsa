@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.target=Number
+comment1.params=num
+comment1.target=Number(int)
+comment2.params=
+comment2.target=boolean\ isOdd()
+comment3.params=
+comment3.target=boolean\ isPerfect()
+comment4.params=
+comment4.target=boolean\ isEven()
+comment5.params=
+comment5.target=java.lang.String\ toString()
+numComments=6
