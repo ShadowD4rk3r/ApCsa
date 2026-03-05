@@ -26,13 +26,11 @@ public class Word
        return word.length();
    }
 
-   // allow the stored word to change
    public void setWord(String w)
    {
        word = w;
    }
 
-   // print the word when the object is used in string context
    public String toString()
    {
        return word;
