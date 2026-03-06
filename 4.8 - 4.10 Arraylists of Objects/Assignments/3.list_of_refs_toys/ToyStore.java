@@ -6,28 +6,69 @@ public class ToyStore
 
 	public ToyStore()
 	{
+		toyList  = new ArrayList<Toy>();
 	}
 
 	public void loadToys( String[] toys )
 	{
+		for (String t : toys)
+		{
+			Toy found = getThatToy(t);
+
+			if (found == null)
+			{
+				toyList.add(new Toy(t));
+			}
+			else
+			{
+				found.setCount(found.getCount() + 1);
+			}
+		}
 	}
   
   	public Toy getThatToy( String nm )
   	{
+		for (Toy t : toyList)
+		{
+			if (t.getName().equals(nm))
+			return t;
+		}
   		return null;
   	}
   
   	public String getMostFrequentToy()
   	{
-  		return "";
+		if (toyList.size() == 0)
+		{
+			return "";
+		}
+		
+		Toy max = toyList.get(0);
+		for (Toy t : toyList)
+		{
+			if (t.getCount() > max.getCount())
+			{
+				max = t;
+			}
+		}
+  		return max.getName();
   	}  
   
   	public void sortToysByCount()
   	{
+		for (int i = 0; i < toyList.size(); i++)
+		{
+			for (int j = i + 1; j < toyList.size(); j++)
+			{
+				Toy temp = toyList.get(i);
+				toyList.set(i, toyList.get(j));
+				toyList.set(j, temp);
+			}
+		}
   	}  
   	  
 	public String toString()
 	{
-	   return "";
+	   return toyList.toString();
 	}
 }
