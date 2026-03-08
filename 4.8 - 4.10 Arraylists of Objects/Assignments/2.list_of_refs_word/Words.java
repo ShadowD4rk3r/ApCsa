@@ -2,7 +2,7 @@ import java.util.*;
 
 public class Words
 {
-	private ArrayList<Word> words;
+	private final ArrayList<Word> words;
 
 	public Words(String[] wordList)
 	{
@@ -63,6 +63,7 @@ public class Words
 		return count;
 	}
 	
+        @Override
 	public String toString()
 	{
 		return words.toString();
