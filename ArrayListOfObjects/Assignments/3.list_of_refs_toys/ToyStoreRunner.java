@@ -13,7 +13,7 @@ public class ToyStoreRunner
 		sto.loadToys( s );
 		System.out.println( sto );	
 		System.out.println( "max == " + sto.getMostFrequentToy() );	
-		System.out.println( sto.getThatToy() );	
+		System.out.println( sto.getThatToy( sto.getMostFrequentToy() ) );	
 		
 		System.out.println(" ");
 
@@ -23,6 +23,7 @@ public class ToyStoreRunner
 		sto2.loadToys( s2 );
 		System.out.println( sto2 );
 		System.out.println("max == " + sto2.getMostFrequentToy());
-		System.out.println(sto2.getMostFrequentToy());
+		String max = sto2.getMostFrequentToy();
+		System.out.println(sto2.getThatToy( max ));
 	}
 }

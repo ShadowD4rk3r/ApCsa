@@ -13,7 +13,7 @@ public class ToyStore
 	{
 		for (String t : toys)
 		{
-			t = t.trim();
+			t = t.trim().toLowerCase();
 			Toy found = getThatToy(t);
 
 			if (found == null)
@@ -57,7 +57,7 @@ public class ToyStore
 				max = t;
 			}
 		}
-    	return max;
+    	return max.getName();
 	}  
   
   	public void sortToysByCount()
