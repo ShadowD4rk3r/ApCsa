@@ -2,6 +2,7 @@ public class WordsRunner
 {
 	public static void main(String[] args)
 	{
+		
 		String[] wrds = "one two three four five six seven alligator".split(" ");
 		Words test = new Words( wrds );
 		System.out.println(test);

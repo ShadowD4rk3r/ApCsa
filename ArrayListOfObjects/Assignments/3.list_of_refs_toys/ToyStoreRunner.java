@@ -13,16 +13,16 @@ public class ToyStoreRunner
 		sto.loadToys( s );
 		System.out.println( sto );	
 		System.out.println( "max == " + sto.getMostFrequentToy() );	
-		System.out.println( sto.getThatToy( "sorry" ) );	
+		System.out.println( sto.getThatToy() );	
 		
 		System.out.println(" ");
 
 		ToyStore sto2 = new ToyStore();
 		System.out.println( sto2 );
-		String[] s2 = n.nextLine().split(" ");
+		String[] s2 = n.nextLine().trim().split("\\s+");
 		sto2.loadToys( s2 );
 		System.out.println( sto2 );
-		System.out.println( "max == " + sto2.getMostFrequentToy() );
-		System.out.println( sto2.getThatToy( "sorry" ) );
+		System.out.println("max == " + sto2.getMostFrequentToy());
+		System.out.println(sto2.getMostFrequentToy());
 	}
 }

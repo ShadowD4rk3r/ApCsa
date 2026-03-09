@@ -13,6 +13,7 @@ public class ToyStore
 	{
 		for (String t : toys)
 		{
+			t = t.trim();
 			Toy found = getThatToy(t);
 
 			if (found == null)
@@ -28,22 +29,27 @@ public class ToyStore
   
   	public Toy getThatToy( String nm )
   	{
+    nm = nm.trim();
+
 		for (Toy t : toyList)
 		{
-			if (t.getName().equals(nm))
-			return t;
+			if (t.getName().trim().equalsIgnoreCase(nm))
+			{
+				return t;
+			}
 		}
-  		return null;
-  	}
+    return null;
+}
   
   	public String getMostFrequentToy()
   	{
 		if (toyList.size() == 0)
 		{
-			return "";
+			return null;
 		}
-		
-		Toy max = toyList.get(0);
+
+    	Toy max = toyList.get(0);
+
 		for (Toy t : toyList)
 		{
 			if (t.getCount() > max.getCount())
@@ -51,21 +57,24 @@ public class ToyStore
 				max = t;
 			}
 		}
-  		return max.getName();
-  	}  
+    	return max;
+	}  
   
   	public void sortToysByCount()
   	{
-		for (int i = 0; i < toyList.size(); i++)
-		{
-			for (int j = i + 1; j < toyList.size(); j++)
-			{
-				Toy temp = toyList.get(i);
-				toyList.set(i, toyList.get(j));
-				toyList.set(j, temp);
-			}
-		}
-  	}  
+    for (int i = 0; i < toyList.size(); i++)
+    {
+        for (int j = i + 1; j < toyList.size(); j++)
+        {
+            if (toyList.get(j).getCount() > toyList.get(i).getCount())
+            {
+                Toy temp = toyList.get(i);
+                toyList.set(i, toyList.get(j));
+                toyList.set(j, temp);
+            }
+        }
+    }
+}  
   	  
 	public String toString()
 	{
