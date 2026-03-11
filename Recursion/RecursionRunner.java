@@ -2,7 +2,13 @@ public class RecursionRunner
 {
     public static void main(String[] args)
     {      
-        //add test cases for each assignment
-        //make it clear what you are testing
+        int[]  s = { 4532, 11145322, 224532714, 2468, 13579};
+
+        for (int i = 0; i < s.size; i++)
+        {
+            System.out.println(s[i]);
+            System.out.println(countOddDigits(s[i]));
+        }
+        
     }
 }
