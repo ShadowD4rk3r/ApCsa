@@ -29,7 +29,7 @@ public class ToyStore
   
   	public Toy getThatToy( String nm )
   	{
-    nm = nm.trim(.toLowerCase());
+    nm = nm.trim(toLowerCase());
 
 		for (Toy t : toyList)
 		{
