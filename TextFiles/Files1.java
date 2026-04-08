@@ -2,3 +2,7 @@
  *  the total number of numbers, the sum of the numbers, a count
  *  of the even numbers, and the percent of even numbers. * 
  */
+public class Files1
+{
+    
+}
