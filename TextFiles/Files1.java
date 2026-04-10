@@ -18,6 +18,12 @@ public class Files1
 
     input.close();
 
+    while (myObj.hasNextInt())
+    {
+        int num = myObj.nextInt();
+        System.out.println(num);
+    }
+
     /* Use this if you are unsure if it is working, this is helpful. */
     /* 
     Scanner myReader = new Scanner(myObj);
