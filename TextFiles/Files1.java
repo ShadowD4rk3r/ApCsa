@@ -4,5 +4,5 @@
  */
 public class Files1
 {
-    
+    int something = 0;
 }
