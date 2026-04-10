@@ -16,6 +16,8 @@ public class Files1
     String fileName = input.nextLine();
     File myObj = new File(fileName);
 
+    input.close();
+    
     /* Use this if you are unsure if it is working, this is helpful. */
     Scanner myReader = new Scanner(myObj);
         try 
