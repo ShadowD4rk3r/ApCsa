@@ -17,8 +17,9 @@ public class Files1
     File myObj = new File(fileName);
 
     input.close();
-    
+
     /* Use this if you are unsure if it is working, this is helpful. */
+    /* 
     Scanner myReader = new Scanner(myObj);
         try 
         {
@@ -34,6 +35,7 @@ public class Files1
         {
             myReader.close();
         } 
+    */
 
 
     }
