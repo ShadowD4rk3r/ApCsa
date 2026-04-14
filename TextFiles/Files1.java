@@ -16,13 +16,35 @@ public class Files1
     String fileName = input.nextLine();
     File myObj = new File(fileName);
 
-    input.close();
+    Scanner fileReader = new Scanner(myObj);
 
-    while (myObj.hasNextInt())
-    {
-        int num = myObj.nextInt();
-        System.out.println(num);
-    }
+    int count = 0;
+        int sum = 0;
+        int evenCount = 0;
+
+        while (fileReader.hasNextInt()) {
+            int num = fileReader.nextInt();
+
+            count++;
+            sum += num;
+
+            if (num % 2 == 0) {
+                evenCount++;
+            }
+        }
+
+        fileReader.close();
+        input.close();
+
+        double percentEven = 0.0;
+        if (count > 0) {
+            percentEven = (evenCount * 100.0) / count;
+        }
+
+        System.out.println("Total numbers: " + count);
+        System.out.println("Sum: " + sum);
+        System.out.println("Even numbers: " + evenCount);
+        System.out.println("Percent even: " + percentEven + "%");
 
     /* Use this if you are unsure if it is working, this is helpful. */
     /* 
