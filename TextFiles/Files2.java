@@ -7,6 +7,7 @@
  */
 
 import java.io.File;
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Files2 {
@@ -47,5 +48,20 @@ public class Files2 {
             System.out.println("No negative sum was found.");
             System.out.println("Final sum: " + sum);
         }
+
+
+        ArrayList<String> list = new ArrayList<>();
+        list.add("hello");
+        list.add("world");
+        list.add("hello world");
+
+        for (int i = 0; i < list.size(); i++) {
+            for (int j = 0; j < i; j++) {
+                if (list.get(i).contains(list.get(j))) {
+                    System.out.println("Element '" + list.get(i) + "' contains previous element '" + list.get(j) + "'.");
+                }
+            }
+        }
+        System.out.println("Program ended.");
     }
 }

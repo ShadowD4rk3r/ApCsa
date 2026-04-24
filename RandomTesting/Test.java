@@ -34,17 +34,18 @@ public class Test {
 
 	for (int i = 0; i < wordList.size(); i++)
     {
-    	if (wordList.get(i + 1).contains(wordList.get(i)))
-        {
-        	change = true;
-        }
-        else 
-        {
-        	change = false;
-            break;
-        }
-        
-        return change;
+
+    //(wordList.get(i + 1).contains(wordList.get(i) ? change = true : change = false));
+
+    if (i + 1 < wordList.size() && wordList.get(i + 1).contains(wordList.get(i)))
+    {
+        change = true;
+    }
+    else
+    {
+        change = false;
+    }
+    	
     }
     
 }
