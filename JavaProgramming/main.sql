@@ -31,7 +31,19 @@ INSERT INTO library
     ('JoJo''s Bizarre Adventure: Battle Tendency Vol 1', 'Hirohiko Araki', 600, 'Manga'), 
     ('Welcome to the Ballroom Heat 2', 'Tomo Takeuchi', NULL, 'Sports')
     ('A Beautiful and Terrible Murder', 'Claire Andrews', NULL, 'Mystery'),
-    ('')
+    ('The Hunger Games', 'Suzanne Collins', 810, 'Dystopian'),
+    ('Percy Jackson & the Olympians: The Lightning Thief', 'Rick Riordan', 680, 'Fantasy'),
+    ('Harry Potter and the Sorcerer''s Stone', 'J.K. Rowling', 880, 'Fantasy'),
+    ('The Book Thief', 'Markus Zusak', 730, 'Historical Fiction'),
+    ('To Kill a Mockingbird', 'Harper Lee', 870, 'Classic Fiction'),
+    ('Fahrenheit 451', 'Ray Bradbury', 890, 'Dystopian'),
+    ('The Giver', 'Lois Lowry', 760, 'Dystopian'),
+    ('The Fault in Our Stars', 'John Green', 850, 'Realistic Fiction'),
+    ('Divergent', 'Veronica Roth', 700, 'Dystopian'),
+    ('One of Us Is Lying', 'Karen M. McManus', 730, 'Mystery'),
+    ('Legend', 'Marie Lu', 710, 'Dystopian'),
+    ('Holes', 'Louis Sachar', 660, 'Adventure'),
+    ('The Maze Runner', 'James Dashner', 770, 'Sci-Fi');
 
 
 
