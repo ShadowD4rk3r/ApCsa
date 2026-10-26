@@ -1,8 +1,7 @@
-import LegacyUser.java;
 public class Main {
     public static void main(String[] args) {
         LegacyUser user = new LegacyUser();
-        user.passwordHash = "hacked123"; // Direct property access
+        //user.passwordHash = "hacked123"; Direct property access
 
         System.out.println("--- TESTING ENCAPSULATION & VALIDATION ---");
 
