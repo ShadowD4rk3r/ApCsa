@@ -12,19 +12,17 @@ public class UserDAO {
 
     public List<User> getAllUsers() {
         List<User> users = new ArrayList<>();
-        String sql = "SELECT user_id, username, email, role FROM users";
+        String sql = "SELECT user_id, username, email, user_role FROM users";
 
-        // Lesson 4: try-with-resources automatically closes conn, stmt, and rs
         try (Connection conn = DatabaseConnection.getConnection();
              Statement stmt = conn.createStatement();
              ResultSet rs = stmt.executeQuery(sql)) {
 
-            // Lesson 2 & 3: Iterate through cursor rows and build User objects
             while (rs.next()) {
                 int id = rs.getInt("user_id");
                 String username = rs.getString("username");
                 String email = rs.getString("email");
-                String role = rs.getString("role");
+                String role = rs.getString("user_role");
 
                 users.add(new User(id, username, email, role));
             }
